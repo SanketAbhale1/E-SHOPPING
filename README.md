@@ -1,2 +1,2 @@
 # online-eshopingsystem
-this is going to be centralised repository for managing sourse code for online shoping amazon
+this is a web app of E-COMMERCE  developed in spring boot, thymleaf, spring security, html,css. 
