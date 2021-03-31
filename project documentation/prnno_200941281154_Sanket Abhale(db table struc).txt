@@ -1,0 +1,76 @@
+
+         project name-             E-SHOPPING 
+
+
+group no - 80
+
+2159_Sanket Abhale
+
+2191_ pratik suryawanshi
+
+
+
+    category  table:
+
+
++---------------+--------------+------+-----+---------+-------+
+| Field         | Type         | Null | Key | Default | Extra |
++---------------+--------------+------+-----+---------+-------+
+| category_id   | bigint       | NO   | PRI | NULL    |       |
+| category_name | varchar(255) | YES  |     | NULL    |       |
++---------------+--------------+------+-----+---------+-------+
+2 rows in set (0.03 sec)
+
+
+
+
+
+PRODUCT  Table
+
+
++---------------------+--------------+------+-----+---------+-------+
+| Field               | Type         | Null | Key | Default | Extra |
++---------------------+--------------+------+-----+---------+-------+
+| product_id          | bigint       | NO   | PRI | NULL    |       |
+| image               | varchar(255) | YES  |     | NULL    |       |
+| product_description | varchar(255) | YES  |     | NULL    |       |
+| product_name        | varchar(255) | YES  |     | NULL    |       |
+| product_price       | int          | YES  |     | NULL    |       |
+| product_unit        | int          | YES  |     | NULL    |       |
+| category_id         | bigint       | YES  | MUL | NULL    |       |
++---------------------+--------------+------+-----+---------+-------+
+
+
+
+ user  table
+
+
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| user_id    | bigint       | NO   | PRI | NULL    |       |
+| active     | int          | NO   |     | NULL    |       |
+| email      | varchar(255) | NO   |     | NULL    |       |
+| first_name | varchar(255) | NO   |     | NULL    |       |
+| last_name  | varchar(255) | NO   |     | NULL    |       |
+| password   | varchar(255) | NO   |     | NULL    |       |
+| role       | varchar(255) | NO   |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+
+
+
+user_product_list  table
+
+
++------------+--------+------+-----+---------+-------+
+| Field      | Type   | Null | Key | Default | Extra |
++------------+--------+------+-----+---------+-------+
+| user_id    | bigint | NO   | MUL | NULL    |       |
+| product_id | bigint | NO   | MUL | NULL    |       |
++------------+--------+------+-----+---------+-------+
+
+
+
+
+
+
